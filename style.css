@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+    place-content: start;
+    background-color: rgba(10, 88, 10, 0.541);
+    position: fixed;
+}
+.header-links{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    gap: 4rem;
+}
+.header-links-names{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.podguri-logo{
+    margin-left: 100px;
+    width: 100px;
+}
+.main-photo{
+    width: 100%;
+}
+.main-text{
+    display: grid;
+    gap: 1rem;
+    margin: 60px;
+}
+.pics4{
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fill, minmax(200px,350px));
+    gap: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    place-content: center;
+    overflow-y: hidden;
+    margin-bottom: 60px;
+}
+.unique-pics{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    
+}
+.main-second-text{
+    display: grid;
+    place-content: center;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.svgs{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin: 40px 80px;
+    align-content: center;
+}
+.svg-pics{
+ width: 200px;
+ height: 250px;
+}
+.svg-pics-container{
+    display: grid;
+    grid-auto-flow: row;
+    text-align: center;
+}
+.button{
+    display: grid;
+    place-content: center;
+    margin: 60px;
+}
+.learn-button{
+    display:inline-block;
+    padding: 0.7rem 1.2em;
+    border:0.1em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.2s;
+    align-self: center;
+    background-color: #00000038;
+}
+.learn-button:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+}
+.others-experience{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    place-self: center;
+    justify-self: center;
+    align-self: center;
+    height: 400px;
+    margin: 150px;
+}
+.others-experience-text{
+    background-color: #00000052;
+    text-align: center;
+    padding: 40px;
+}
+.others-experience-text h1{
+    margin-bottom: 30px;
+}
+.others-experience-photo{
+    background-image: url("exp-photo2.jpeg");
+    background-position: 80% 75%;
+
+}
+.form{
+    display: grid;
+    gap: 5px;
+}
+.contact{
+    background-image: url("contact-bg.jpg");
+    background-size: cover;
+    opacity: 0.5;
+    padding: 40px;
+    width: 100%;
+    background-color: rgb(119, 110, 103);
+    display: grid;
+    grid-auto-flow: row;
+    gap: 3rem;
+}
+.contact-container{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
+}
+.contact-header{
+ display: grid;
+ grid-auto-flow: column;
+ text-align: center;
+}
+.inputs{
+    display: grid;
+    gap: 5px;
+    place-content: center;
+    grid-auto-flow: column;
+}
+.inputs-wrapper{
+    display: grid;
+    gap: 5px;
+}
+.text-input{
+    width: 200px;
+    height: 49px;
+}
+.textarea{
+    display: grid;
+    place-content: center;
+}
+.contact-icons{
+    display: grid;
+    place-content: top;
+    justify-content: top;
+    gap: 5px;
+    text-align: center;
+}
+.chat-icon{
+width: 48px;
+}
+.iframe{
+    width: 250px;
+    height: 250px;
+}
+.adress{
+    display: grid;
+    text-align: center;
+    gap: 1rem;
+    place-content: center;
+}
+.submit-button{
+    text-align: center;
+    width: 100%;
+}
