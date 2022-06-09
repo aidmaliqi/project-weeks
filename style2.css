@@ -42,10 +42,17 @@
     display: grid;
     grid-auto-flow: row;
     place-content: center;
+    margin: 40px;
+    
     
 }
 .service-text{
-    background-color: aquamarine;
+    display: grid;
+    gap: 5px;
+    background-color: #011017;
+    width: 400px;
+    padding: 10px;
+    color: aliceblue;
 
 }
 .pics{
