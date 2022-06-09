@@ -13,6 +13,7 @@
     place-content: start;
     background-color: rgba(10, 88, 10, 0.541);
     position: fixed;
+    
 }
 .header-links{
     display: grid;
@@ -30,6 +31,7 @@
 }
 .main-photo{
     width: 100%;
+    
 }
 .main-text{
     display: grid;
@@ -119,7 +121,7 @@
     margin-bottom: 30px;
 }
 .others-experience-photo{
-    background-image: url("exp-photo2.jpeg");
+    background-image: url("/main-page-photos/exp-photo2.jpeg");
     background-position: 80% 75%;
 
 }
@@ -128,15 +130,23 @@
     gap: 5px;
 }
 .contact{
-    background-image: url("contact-bg.jpg");
-    background-size: cover;
-    opacity: 0.5;
     padding: 40px;
     width: 100%;
-    background-color: rgb(119, 110, 103);
     display: grid;
     grid-auto-flow: row;
     gap: 3rem;
+    position: relative;
+}
+.contact::before{
+    content: "";
+    background-image: url("/main-page-photos/contact-bg.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
 }
 .contact-container{
     display: grid;
