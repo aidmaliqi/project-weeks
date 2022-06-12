@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="video">
+    <video id="video-bg" src="backgroundvideo.mp4" autoplay muted loop></video></div>
+<form class="main-form">
+    <div class="form-div">
+        <h1 class="h1">Hey there!</h1>
+        <label for="">
+            What's your name?
+            <input type="text" class="text-input" placeholder="Enter your name" required>
+        </label>
+        
+        <label for="">What's your email address?
+            <input type="email" class="text-input" placeholder="Enter your email address" required>
+        </label>
+        
+        <label for="">What services are you looking for?
+        <select name="Service" id="Service" required >
+            <option value="">Choose a service</option>
+        </select> </label>
+        
+        <label for="">What is your budget?
+            <select name="Service" id="Service" required >
+                <option value="">Select a budget</option>
+            </select> </label>
+            
+            <label for="message">Anything else you'd like to tell us?</label>
+            <textarea class="text-input"
+              id="message"
+              name="message"
+              required
+              minlength="10"
+              placeholder="Your message here..."
+            ></textarea>    
+            
+    <label  class="lastlabel"  for="">I agree with the T&Cs
+        <input type="checkbox" name="" id="checkbox" required>
+    </label>
+    
+        <button type="submit" class="submit-button">Submit⮕</button>
+    
+      </form>
+    
+      
+    
+</body>
+</html>

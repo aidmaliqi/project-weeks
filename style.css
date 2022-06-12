@@ -2,6 +2,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:sans-serif;
+}
+.header2{
+    
+        width: 100%;
+       height: 100px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    place-content: center;
+    justify-content: space-between;
+    background-color: #205729;
+    position: static;
+    display: none;
+}
+.menu{
+    width: 38px;
+    height: 38px;
+    margin-right:  50px;
 }
 .header{
     
@@ -11,38 +30,75 @@
     grid-template-columns: 100px 1fr;
     align-items: center;
     place-content: start;
-    background-color: rgba(10, 88, 10, 0.541);
+    background-color: #205729;
     position: fixed;
-    
 }
 .header-links{
     display: grid;
     grid-auto-flow: column;
     justify-content: center;
+    place-content: center;
     gap: 4rem;
+
+}
+main{
+    width: 100%;
 }
 .header-links-names{
+    font-size: 20px;
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 .podguri-logo{
     margin-left: 100px;
     width: 100px;
 }
+.photo-section{
+    height: 500px;
+    position: relative;
+}
+.unordered-list{
+    display: grid;
+    place-content: center;
+    padding-top: 150px;
+    list-style: none;
+}
+.unordered-list li{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    color: #000000;
+}
+
 .main-photo{
     width: 100%;
-    
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
+/*
+.main-photo2{
+    animation: fade-out 5s alternate infinite;
+    animation-delay: 5s ;
+}*/
 .main-text{
     display: grid;
     gap: 1rem;
     margin: 60px;
+    font-size: 30px;
+    color: #575757;
+}
+.main-text ul li{
+    font-size: 25px;
+    color: #000000;
 }
 .pics4{
     width: 100%;
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: repeat(auto-fill, minmax(200px,350px));
+    grid-template-columns: repeat(4, minmax(200px,350px));
     gap: 3rem;
     margin-left: auto;
     margin-right: auto;
@@ -60,7 +116,12 @@
     display: grid;
     place-content: center;
     text-align: center;
+    gap: 1rem;
     margin-bottom: 60px;
+}
+.main-second-text h1{
+    font-size: 30px;
+    color: #575757;
 }
 .svgs{
     display: grid;
@@ -90,12 +151,10 @@
     margin:0 0.3em 0.3em 0;
     border-radius:0.12em;
     box-sizing: border-box;
-    text-decoration:none;
     font-family:'Roboto',sans-serif;
-    font-weight:300;
     color:#FFFFFF;
     text-align:center;
-    transition: all 0.2s;
+    
     align-self: center;
     background-color: #00000038;
 }
@@ -103,6 +162,11 @@
     color:#000000;
     background-color:#FFFFFF;
 }
+.learn-button a{
+    text-decoration: none;
+    color: #000000;
+}
+
 .others-experience{
     display: grid;
     grid-template-columns: 60% 40%;
@@ -123,30 +187,22 @@
 .others-experience-photo{
     background-image: url("/main-page-photos/exp-photo2.jpeg");
     background-position: 80% 75%;
-
 }
 .form{
     display: grid;
     gap: 5px;
 }
-.contact{
+.contact{ 
+    background-image: url("/servicespage-photos/bg3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(16, 43, 22);
     padding: 40px;
     width: 100%;
     display: grid;
     grid-auto-flow: row;
     gap: 3rem;
     position: relative;
-}
-.contact::before{
-    content: "";
-    background-image: url("/main-page-photos/contact-bg.jpg");
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.5;
 }
 .contact-container{
     display: grid;
@@ -157,12 +213,17 @@
  display: grid;
  grid-auto-flow: column;
  text-align: center;
+ font-size: 25px;
+ color: #FFFFFF;
 }
 .inputs{
     display: grid;
     gap: 5px;
+    padding: 10px;
     place-content: center;
-    grid-auto-flow: column;
+    grid-template-columns: auto auto;
+    border-left: 1px solid rgb(255, 255, 255);
+    border-right: 1px solid rgb(255, 255, 255);
 }
 .inputs-wrapper{
     display: grid;
@@ -173,8 +234,7 @@
     height: 49px;
 }
 .textarea{
-    display: grid;
-    place-content: center;
+    
 }
 .contact-icons{
     display: grid;
@@ -184,7 +244,21 @@
     text-align: center;
 }
 .chat-icon{
-width: 48px;
+width: 38px;
+}
+.location{
+    display: grid;
+}
+.location div{
+    display: grid;
+    grid-auto-flow: column;
+    place-content: center;
+    align-items: center;
+    gap: 1rem;
+    justify-content: start;
+}
+.location div span{
+    color: #FFFFFF;
 }
 .iframe{
     width: 250px;
@@ -192,11 +266,45 @@ width: 48px;
 }
 .adress{
     display: grid;
-    text-align: center;
     gap: 1rem;
-    place-content: center;
+    place-content: top;
+    justify-content: center;
 }
 .submit-button{
     text-align: center;
     width: 100%;
+}
+.f-icons{
+    display: grid;
+    grid-auto-flow: column;
+}
+@keyframes fade-out{
+   100% {
+       opacity: 0;
+   }
+}
+@media screen and (max-width: 1000px) {
+    .header{
+        display: none;
+       
+    }
+    .header2{
+        display: grid;
+        width: 100%;
+    }
+    .pics4{
+        display: none;
+    }
+    .svgs{
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: space-between;
+        margin: 40px 80px;
+        align-content: center;
+    }
+    .svg-pics{
+     width: 80%;
+     height: 80%;
+    }
+    
 }

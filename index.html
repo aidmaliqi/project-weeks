@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Podguri</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header class="header">
@@ -13,23 +14,43 @@
             <img class="podguri-logo" src="/main-page-photos/podguri-logo.jpg" alt="podguri-logo">
         </div>
         <div class="header-links">
-            <a class="header-links-names" href="">Home</a>
-            <a class="header-links-names" href="">Services</a>
+            <a class="header-links-names" href="index1.html">Home</a>
+            <a class="header-links-names" href="index2.html">Services</a>
             <a class="header-links-names" href="">About</a>
-            <a class="header-links-names" href="">Contact</a>
-            <a class="header-links-names" href="">Log In</a>
+            <a class="header-links-names" href="#contact">Contact</a>
+            <a class="header-links-names" href="index1.html">Log In</a>
+        </div>
+    </header>
+    <header class="header2">
+        <div class="header-logo">
+            <img class="podguri-logo" src="/main-page-photos/podguri-logo.jpg" alt="podguri-logo">
+        </div>
+        <div>
+            <span class="material-symbols-outlined menu">
+                menu
+                </span>
         </div>
     </header>
     <main class="main">
         <div class="photo-section">
-            
-             <img class="main-photo" src="/main-page-photos/bg1.jpeg" alt="" srcset="">
+             <img class="main-photo main-photo1" src="/main-page-photos/bg1.jpeg" alt="" srcset="">
+             <!--<img class="main-photo2 main-photo" src="/main-page-photos/bg.jpg" alt="" srcset="">-->
+             <ul class="unordered-list">
+                 <li>Lose Yourself</li>
+                 <li>Explore World</li>
+                 <li>With Podguri Alpine Club</li>
+             </ul>
         </div>
         <div class="main-text">
              <h1> Visit unique places</h1>
              <div>
-             <h4> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
-             <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+            <ul>
+                <li>Mountain Mokna</li>
+                <li>The Twin caves</li>
+                <li>Podguri Viewpoint</li>
+                <li>Istog's river</li>
+            </ul>
+             
              </div> 
         </div>
         <div class="pics4">
@@ -39,12 +60,10 @@
             <img class="unique-pics" src="/main-page-photos/river.jpg" alt="" srcset="">
         </div>
         <div class="main-second-text">
-            <h1>make your moments</h1>
-            <div>
-            <h4>Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
-            <h4>Lorem ipsum dolor sit, amet consectetur adipisicing.</h4>
-            <h4>Lorem ipsum, dolor sit amet consectetur adipisicing.</h4>
-            </div>
+            <h1>Make your moments</h1>
+            
+            <h4>Enjoy what we have to offer</h4>
+            
         </div>
         <div class="svgs">
            <div class="svg-pics-container">
@@ -65,27 +84,29 @@
             </div>
         </div>
         <div class="button">
-        <button class="learn-button">Learn more</button></div>
+        <button class="learn-button"><a href="index2.html">Learn more</a> </button></div>
         
         <section class="others-experience">
             <div class="others-experience-text">
                 <h1>Others Experience</h1>
-                <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti.</span>
+                <span>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti." Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, magni. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, ipsam voluptas!"</span>
+                
             </div>
             <div class="others-experience-photo">
             </div>
         </section>
-        <footer class="contact">
+        <footer id="contact" class="contact">
             <div class="contact-header">
-            <h1>CONTACT US</h1>
+            <h1 >CONTACT US</h1>
            </div>
            <div class="contact-container"> 
           <div class="adress">  
             <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3584.481721471332!2d20.488895499547255!3d42.78052611642853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135319a10c7efdc7%3A0x7aa6f33816d61011!2sParku%20i%20Qytetit!5e0!3m2!1sen!2s!4v1654630262853!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <div class="form">
-
+          <form action="">
           <div class="inputs">
+              
             <div class="inputs-wrapper">
               <input class="text-input" type="text" placeholder="Name">
               <input class="text-input" type="text" placeholder="LastName">
@@ -99,15 +120,19 @@
           <div class="submit-button">
            <button class="learn-button">Submit</button>
         </div>
+    </form>
           </div>
+
           <div class="contact-icons">
-              <span>Istog, Kosovë</span>
-              <span>+383 44 22 44 77</span>
-              <span>klubialpinpodguri@gmail.com</span>
-              <div>
-              <a href=""><img src="instagram-icon.svg" alt=""></a>
-              <a href=""><img src="facebook-icon.svg" alt=""></a>
-              <a href=""><img class="chat-icon" src="chat-icon2.svg" alt=""></a>
+              <div class="location">
+                 <div> <img src="/main-page-photos/location-sign-svgrepo-com.svg" alt="" class="chat-icon"> <span>Istog, Kosovë</span></div> 
+             <div> <img class="chat-icon" src="/main-page-photos/phone-call-svgrepo-com.svg" alt=""> <span>+383 44 22 44 77</span></div>
+              <div> <img class="chat-icon" src="/main-page-photos/gmail.svg" alt=""> <span>klubialpinpodguri@gmail.com</span></div>
+            </div>
+              <div class="f-icons">
+              <a href=""><img src="/main-page-photos/instagram-icon.svg" alt=""></a>
+              <a href=""><img src="/main-page-photos/facebook-icon.svg" alt=""></a>
+              <a href=""><img class="chat-icon" src="/main-page-photos/chat-icon2.svg" alt=""></a>
               </div>
          </div>
         </div>
